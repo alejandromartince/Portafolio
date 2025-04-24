@@ -4,21 +4,21 @@ import React from 'react'
 import './Navbar.css'
 
 const Navbar = () => {
-  return (
-    <header className='navbar'>
-      <div className='contenedor-izquierda'>
-        <h1 className='navbar__title'>Mi Portafolio</h1>
-      </div>
+    return (
+        <header className='navbar'>
+            <div className='contenedor-izquierda'>
+                <ul className='navbar-list'>
+                    <li className='navbar-item'>Inicio</li>
+                    <li className='navbar-item'>Sobre mí</li>
+                    <li className='navbar-item'>Contacto</li>
+                </ul>
+            </div>
 
-      <div className='contenedor-derecha'>
-        <ul className='navbar__list'>
-          <li className='navbar__item'>Inicio</li>
-          <li className='navbar__item'>Sobre mí</li>
-          <li className='navbar__item'>Contacto</li>
-        </ul>
-      </div>
-    </header >
-  )
+            <div className='contenedor-derecha'>
+                <h1 className='navbar-title'>Mi Portafolio</h1>
+            </div>
+        </header >
+    )
 }
 
 export default Navbar

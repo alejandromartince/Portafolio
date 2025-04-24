@@ -7,6 +7,7 @@ OPCIONES GENERALES
     overflow: hidden;
     display: flex;
     justify-content: space-between;
+    padding: 0 2rem;
 }
 
 /* ==========================================
@@ -16,8 +17,17 @@ CONTENEDOR IZQUIERDA
 
 } */
 
+.navbar-list{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
 /* ==========================================
 CONTENEDOR DERECHA
 ===========================================*/
 /* .contenedor-derecha{
 } */
+
+
