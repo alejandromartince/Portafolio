@@ -5,7 +5,7 @@ export const navLinks = [
         es: "Inicio",
         en: "Home",
       },
-      href: "#inicio",
+      href: "inicio",
     },
     {
       id: 2,
@@ -13,7 +13,7 @@ export const navLinks = [
         es: "Sobre mí",
         en: "About me",
       },
-      href: "#sobremi",
+      href: "sobremi",
     },
     {
       id: 3,
@@ -21,7 +21,7 @@ export const navLinks = [
         es: "Contacto",
         en: "Contact Me",
       },
-      href: "#contacto",
+      href: "contacto",
     },
   ];
   
