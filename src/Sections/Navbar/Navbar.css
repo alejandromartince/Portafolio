@@ -21,14 +21,14 @@ CONTENEDOR IZQUIERDA
     gap: 2rem;
 }
 
-.enlace {
+.navbar-enlace {
     color: white;
     text-decoration: none;
     cursor: pointer;
     transition: color 0.3s ease;
 }
 
-.enlace:hover {
+.navbar-enlace:hover {
     color: #00bfff;
 }
 
