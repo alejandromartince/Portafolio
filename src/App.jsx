@@ -1,4 +1,6 @@
 import Navbar from './Sections/Navbar/Navbar'
+import Inicio from './Sections/Inicio/Inicio'
+import SobreMi from './Sections/SobreMi/SobreMi'
 
 
 //Importamos los estilos
@@ -9,6 +11,8 @@ function App() {
   return (
     <>
       <Navbar />
+      <Inicio />
+      <SobreMi />
     </>
   )
 }

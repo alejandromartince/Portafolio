@@ -3,10 +3,12 @@ OPCIONES GENERALES
 ===========================================*/
 
 .navbar {
-    overflow: hidden;
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    position: fixed;
     padding: 0 2rem;
+    overflow: hidden;
 }
 
 /* ==========================================
