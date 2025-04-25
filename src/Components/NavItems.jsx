@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-scroll";
 
 //Importamos la informacion
-import { navLinks } from "../../Constants/navLinks";
+import { navLinks } from "../Constants/navLinks";
 
 const NavItems = ({ language = "es", onClick }) => {
 

@@ -2,9 +2,8 @@
 import React, { useEffect } from 'react'
 import { scroller } from 'react-scroll'; // Importamos scroller de react-scroll
 
-
 //Importamos los componentes
-import NavItems from './NavItems'
+import NavItems from '../../Components/NavItems'
 
 //Importamos los estilos
 import './Navbar.css'
