@@ -18,8 +18,8 @@ export const navLinks = [
     {
       id: 3,
       name: {
-        es: "Proyectos",
-        en: "Projects",
+        es: "Contacto",
+        en: "Contact Me",
       },
       href: "#contacto",
     },
