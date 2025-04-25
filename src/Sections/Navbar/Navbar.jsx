@@ -3,7 +3,8 @@ import React, { useEffect } from 'react'
 import { scroller } from 'react-scroll'; // Importamos scroller de react-scroll
 
 //Importamos los componentes
-import NavItems from '../../Components/NavItems'
+import NavItems from '../../Components/Navbar/NavItems'
+import SelectorIdioma from '../../Components/Navbar/SelectorIdioma';
 
 //Importamos los estilos
 import './Navbar.css'
@@ -25,7 +26,7 @@ const Navbar = () => {
             <NavItems language="es" />
 
             <div className='contenedor-derecha'>
-                <h1 className='navbar-title'>Mi Portafolio</h1>
+                <SelectorIdioma />
             </div>
         </header >
     )
