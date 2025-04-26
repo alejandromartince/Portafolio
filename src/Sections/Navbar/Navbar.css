@@ -25,7 +25,7 @@ CONTENEDOR IZQUIERDA
     color: white;
     text-decoration: none;
     cursor: pointer;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease-in-out;
 }
 
 .navbar-enlace:hover {
@@ -34,7 +34,6 @@ CONTENEDOR IZQUIERDA
 
 .active {
     color: #00bfff;
-    font-weight: bold;
 }
 
 /* ==========================================

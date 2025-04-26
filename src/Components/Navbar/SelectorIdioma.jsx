@@ -13,7 +13,6 @@ const SelectorIdioma = () => {
     cambiarIdioma(e.target.value);
   };
 
-
   // CAMBIAR POR REACT-SELECT
   return (
     <div>

@@ -6,11 +6,16 @@ import { scroller } from 'react-scroll'; // Importamos scroller de react-scroll
 import NavItems from '../../Components/Navbar/NavItems'
 import SelectorIdioma from '../../Components/Navbar/SelectorIdioma';
 
+//Importamos el contexto
+import { useIdioma } from '../../Contexts/IdiomaContext';
+
 //Importamos los estilos
 import './Navbar.css'
 
 const Navbar = () => {
 
+    const idioma = useIdioma(); // Usamos el hook de idioma
+   
     //Ponemos offset en 1 para que se carge la active class de primeras
     useEffect(() => {
         scroller.scrollTo('inicio', {
@@ -21,9 +26,10 @@ const Navbar = () => {
         });
     }, []);
 
+
     return (
         <header className='navbar'>
-            <NavItems language="es" />
+            <NavItems language={idioma} /> 
 
             <div className='contenedor-derecha'>
                 <SelectorIdioma />

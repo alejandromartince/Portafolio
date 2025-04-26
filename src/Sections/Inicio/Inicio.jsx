@@ -11,7 +11,6 @@ const Inicio = () => {
         <p className='inicio-descripcion'>Soy un desarrollador web apasionado por crear experiencias digitales únicas.</p>
         <a href='#sobremi' className='inicio-boton'>Saber más</a>
       </div>
-      
     </section >
   )
 }

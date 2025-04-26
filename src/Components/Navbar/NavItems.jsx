@@ -1,9 +1,13 @@
+//Importamos los hooks de react
 import React from "react";
 import { Link } from "react-scroll";
-
-//Importamos la informacion
 import { navLinks } from "../../Constants/navLinks";
-const NavItems = ({ language = "es", onClick }) => {
+
+//Importamos el contexto del idioma
+import { useIdioma } from "../../Contexts/IdiomaContext";
+
+const NavItems = ({ onClick }) => {
+    const { idioma } = useIdioma(); // 👈 aquí obtienes el idioma actual
 
     return (
         <div className="contenedor-izquierda">
@@ -19,7 +23,7 @@ const NavItems = ({ language = "es", onClick }) => {
                             offset={0}
                             onClick={onClick}
                         >
-                            {item.name[language]}
+                            {item.name[idioma]} {/* 👈 cambia language por idioma */}
                         </Link>
                     </li>
                 ))}
