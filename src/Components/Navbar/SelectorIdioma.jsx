@@ -1,5 +1,5 @@
 import React from 'react';
-import Select from 'react-select';
+import Select, { components } from 'react-select';
 
 import '../../Sections/Navbar/Navbar.css';
 import { useIdioma } from '../../Contexts/IdiomaContext';
@@ -18,12 +18,11 @@ const SelectorIdioma = () => {
 
   const idiomaSeleccionado = opciones.find(opcion => opcion.value === idioma);
 
-  // Estilos personalizados para un navbar oscuro + verde gamer
   const customStyles = {
     control: (provided, state) => ({
       ...provided,
-      backgroundColor: '#0f0f0f', // Fondo muy oscuro
-      borderColor: state.isFocused ? '#00ff00' : '#222', // Borde verde si está enfocado
+      backgroundColor: 'transparent',
+      borderColor: state.isFocused ? '#00ff00' : '#222',
       boxShadow: state.isFocused ? '0 0 5px #00ff00' : 'none',
       '&:hover': {
         borderColor: '#00ff00',
@@ -34,24 +33,29 @@ const SelectorIdioma = () => {
     }),
     singleValue: (provided) => ({
       ...provided,
-      color: '#00ff00', // Texto verde
+      color: '#00ff00',
+      display: 'flex',
+      alignItems: 'center',
     }),
     option: (provided, state) => ({
       ...provided,
-      backgroundColor: state.isFocused ? '#003300' : '#0f0f0f', // Oscuro o verde muy oscuro al pasar ratón
+      backgroundColor: state.isFocused ? '#003300' : '#0f0f0f',
       color: '#00ff00',
       '&:hover': {
         backgroundColor: '#005500',
       },
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
     }),
     menu: (provided) => ({
       ...provided,
-      backgroundColor: '#0f0f0f', // Menú desplegable oscuro
+      backgroundColor: '#0f0f0f',
       border: '1px solid #00ff00',
     }),
     dropdownIndicator: (provided, state) => ({
       ...provided,
-      color: state.isFocused ? '#00ff00' : '#00aa00', // Flecha de desplegar
+      color: state.isFocused ? '#00ff00' : '#00aa00',
       '&:hover': {
         color: '#00ff00',
       },
@@ -63,37 +67,44 @@ const SelectorIdioma = () => {
     }),
     input: (provided) => ({
       ...provided,
-      color: '#00ff00', // Input de búsqueda interna
+      color: '#00ff00',
     }),
   };
 
+  // Mostramos SOLO la bandera arriba
+  const SingleValue = ({ data, ...props }) => (
+    <components.SingleValue {...props}>
+      <img
+        src={data.icon}
+        alt={data.label}
+        style={{ width: '20px', height: 'auto' }}
+      />
+    </components.SingleValue>
+  );
+
+  // Mostramos SOLO la bandera en el menú desplegable
+  const Option = (props) => (
+    <components.Option {...props}>
+      <img
+        src={props.data.icon}
+        alt={props.data.label}
+        style={{ width: '30px', height: 'auto' }}
+      />
+    </components.Option>
+  );
+
   return (
     <div>
-      <label htmlFor="idioma" style={{ color: '#00ff00', marginRight: '8px' }}>
-        Selecciona idioma:
-      </label>
       <Select
         id="idioma"
         options={opciones}
         value={idiomaSeleccionado}
         onChange={handleChange}
-        placeholder="Elige un idioma"
         styles={customStyles}
         menuPortalTarget={document.body}
         menuPosition="fixed"
-        getOptionLabel={(e) => (
-          <div style={{ display: 'flex', alignItems: 'center' }}>
-            <img
-              src={e.icon}
-              alt={e.label}
-              style={{ width: '20px', height: '20px', marginRight: '8px' }}
-            />
-            {e.label}
-          </div>
-        )}
+        components={{ SingleValue, Option }}
       />
-
-
     </div>
   );
 };
