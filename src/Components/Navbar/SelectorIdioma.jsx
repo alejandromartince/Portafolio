@@ -22,10 +22,10 @@ const SelectorIdioma = () => {
     control: (provided, state) => ({
       ...provided,
       backgroundColor: 'transparent',
-      borderColor: state.isFocused ? '#00ff00' : '#222',
-      boxShadow: state.isFocused ? '0 0 5px #00ff00' : 'none',
+      borderColor: state.isFocused ? '#fff' : '#222',
+      boxShadow: state.isFocused ? '0 0 5px rgb(255, 255, 255), 0)' : 'none',
       '&:hover': {
-        borderColor: '#00ff00',
+        borderColor: '#fff',
       },
       color: '#00ff00',
       minHeight: '30px',
@@ -39,7 +39,7 @@ const SelectorIdioma = () => {
     }),
     option: (provided, state) => ({
       ...provided,
-      backgroundColor: state.isFocused ? '#003300' : '#0f0f0f',
+      backgroundColor: state.isFocused ? 'transparent' : '#transparent',
       color: '#00ff00',
       '&:hover': {
         backgroundColor: '#005500',
@@ -51,13 +51,13 @@ const SelectorIdioma = () => {
     menu: (provided) => ({
       ...provided,
       backgroundColor: '#0f0f0f',
-      border: '1px solid #00ff00',
+      border: '1px solid #fff',
     }),
     dropdownIndicator: (provided, state) => ({
       ...provided,
-      color: state.isFocused ? '#00ff00' : '#00aa00',
+      color: state.isFocused ? '#fff' : '#fff',
       '&:hover': {
-        color: '#00ff00',
+        color: '#fff',
       },
       padding: '2px',
     }),
@@ -67,7 +67,7 @@ const SelectorIdioma = () => {
     }),
     input: (provided) => ({
       ...provided,
-      color: '#00ff00',
+      color: '#fff',
     }),
   };
 

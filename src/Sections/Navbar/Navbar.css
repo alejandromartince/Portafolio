@@ -9,6 +9,9 @@ OPCIONES GENERALES
     position: fixed;
     padding: 0 2rem;
     overflow: hidden;
+    background-color: var(--negro-navbar);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 /* ==========================================
@@ -29,11 +32,11 @@ CONTENEDOR IZQUIERDA
 }
 
 .navbar-enlace:hover {
-    color: #00bfff;
+    color: var(--verde-claro);
 }
 
 .active {
-    color: #00bfff;
+    color: var(--verde-claro);
 }
 
 /* ==========================================
@@ -41,4 +44,3 @@ CONTENEDOR DERECHA
 ===========================================*/
 /* .contenedor-derecha{
 } */
-
