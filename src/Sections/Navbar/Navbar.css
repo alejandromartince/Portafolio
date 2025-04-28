@@ -38,7 +38,7 @@ CONTENEDOR IZQUIERDA
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 30%; /* Empieza con la línea oculta */
+    width: 40%; /* Empieza con la línea oculta */
     height: 2px;
     background-color: var(--verde-claro);
     transition: width 0.3s ease-in-out; /* Animación para expandir la línea */

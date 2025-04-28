@@ -7,8 +7,8 @@ const Inicio = () => {
   return (
     <section id='inicio' className='inicio'>
       <div className='inicio-contenido'>
-        <h1 className='inicio-titulo'>Hola, soy [Tu Nombre]</h1>
-        <p className='inicio-descripcion'>Soy un desarrollador web apasionado por crear experiencias digitales únicas.</p>
+        <h2 className='titulo-nombre'>Alejandro</h2>
+        <h1 className='titulo-apellido'>Martin</h1>
         <a href='#sobremi' className='inicio-boton'>Saber más</a>
       </div>
     </section >
