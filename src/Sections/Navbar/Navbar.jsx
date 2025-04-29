@@ -39,3 +39,5 @@ const Navbar = () => {
 }
 
 export default Navbar
+
+//SE PUEDE ESCRIBIR EN EL IDIOMA. HAY QUE MODIFICAR ESO
