@@ -4,14 +4,30 @@
 .inicio {
     height: 100vh;
     padding-top: 4rem;
-    background-image: url(/public/assets/Imagenes/Fondos/home-background.jpg);
+    background-image: url(/assets/Imagenes/Fondos/home-background.jpg);
     background-size: cover;
 }
 
 .inicio-contenido {
     display: flex;
+    height: 100%;
     justify-content: center;
     flex-direction: column;
+    margin-left: 5rem;
+}
+
+/*====================================
+    OPCIONES DEL TITULO
+====================================*/
+.titulo-nombre{
+    font-weight: lighter;
+    font-size: 2rem;
+}
+
+.titulo-apellido{
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 3rem;
 }
 
 

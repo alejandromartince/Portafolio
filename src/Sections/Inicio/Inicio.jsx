@@ -9,7 +9,7 @@ const Inicio = () => {
     <section id='inicio' className='inicio'>
       <div className='inicio-contenido'>
         <p className='titulo-nombre'>Alejandro</p>
-        <h1 className='titulo-apellido'>MartÍn</h1>
+        <h1 className='titulo-apellido'>MARTÍN</h1>
         <TypeWritter />
       </div>
     </section >
@@ -17,3 +17,5 @@ const Inicio = () => {
 }
 
 export default Inicio
+
+//HACER EL APELLIDO DE UN TAMAÑO DIV Y QUE EL TYPEWRITER SIEMPRE TENGA ESE TAMAÑO

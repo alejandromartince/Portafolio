@@ -26,6 +26,8 @@ body,
   --negro-claro: #141414;
   --negro-navbar: #0f0f0ffd;
   --negro-navbar-claro: #0f0f0f00;
+  --negro-navbar-rgb: 0, 0, 0;
+  --negro-navbar-claro-rgb: 17, 17, 17;
 
   /* VERDES */
   --verde-claro: #1dff8e;
