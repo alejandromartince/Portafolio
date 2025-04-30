@@ -21,12 +21,17 @@
 ====================================*/
 .titulo-nombre{
     font-weight: lighter;
-    font-size: 2rem;
+    font-size: 2.5rem;
+}
+
+.apellido-typewritter-container{
+    width: fit-content;
+    /* background-color: red; */
 }
 
 .titulo-apellido{
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 4rem;
     line-height: 3rem;
 }
 

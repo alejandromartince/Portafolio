@@ -9,8 +9,10 @@ const Inicio = () => {
     <section id='inicio' className='inicio'>
       <div className='inicio-contenido'>
         <p className='titulo-nombre'>Alejandro</p>
-        <h1 className='titulo-apellido'>MARTÍN</h1>
-        <TypeWritter />
+        <div className='apellido-typewritter-container'>
+          <h1 className='titulo-apellido'>MARTÍN</h1>
+          <TypeWritter />
+        </div>
       </div>
     </section >
   )
