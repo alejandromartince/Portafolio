@@ -8,10 +8,9 @@ const Inicio = () => {
   return (
     <section id='inicio' className='inicio'>
       <div className='inicio-contenido'>
-        <h2 className='titulo-nombre'>Alejandro</h2>
-        <h1 className='titulo-apellido'>Martin</h1>
+        <p className='titulo-nombre'>Alejandro</p>
+        <h1 className='titulo-apellido'>MartÍn</h1>
         <TypeWritter />
-        <a href='#sobremi' className='inicio-boton'>Saber más</a>
       </div>
     </section >
   )

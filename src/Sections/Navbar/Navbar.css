@@ -9,9 +9,8 @@ OPCIONES GENERALES
     position: fixed;
     padding: 0 2rem;
     overflow: hidden;
-    background-color: var(--negro-navbar);
+    background: linear-gradient(to top, var(--negro-navbar-claro), var(--negro-navbar));
     backdrop-filter: blur(10px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 

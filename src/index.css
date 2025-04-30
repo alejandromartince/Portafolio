@@ -22,8 +22,12 @@ body,
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  /* NEGROS */
   --negro-claro: #141414;
-  --negro-navbar: rgba(15, 15, 15, 0.7);
+  --negro-navbar: #0f0f0ffd;
+  --negro-navbar-claro: #0f0f0f00;
+
+  /* VERDES */
   --verde-claro: #1dff8e;
 }
 

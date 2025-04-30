@@ -7,7 +7,7 @@ import { useIdioma } from '../../Contexts/IdiomaContext';
 const TypeWritter = () => {
 
   const idioma = useIdioma();
- 
+
   const roles = {
     es: [
       "Ingeniero Informático",
@@ -36,6 +36,7 @@ const TypeWritter = () => {
             delaySpeed: 1000,
             cursor: "|",
             cursorBlinking: true,
+            cursorClassName: "typewriter-cursor",
           }}
         />
       </div>

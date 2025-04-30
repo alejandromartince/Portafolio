@@ -1,4 +1,41 @@
+/*====================================
+    OPCIONES GENERALES
+====================================*/
 .inicio {
     height: 100vh;
     padding-top: 4rem;
+    background-image: url(/public/assets/Imagenes/Fondos/home-background.jpg);
+    background-size: cover;
+}
+
+.inicio-contenido {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+/*============================================
+    OPCIONES DEL TYPEWRITER
+============================================*/
+.typewriter-cursor {
+    display: inline-block;
+    color: var(--verde-claro);
+    font-size: 1.2rem; /* Aumenta el tamaño */
+    animation: blink .8s infinite;
+    margin-left: 1px;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
