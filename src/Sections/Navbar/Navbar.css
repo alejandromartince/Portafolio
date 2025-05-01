@@ -9,8 +9,7 @@ OPCIONES GENERALES
     position: fixed;
     padding: 0 2rem;
     overflow: hidden;
-    background: linear-gradient(to top, rgba(var(--negro-navbar-claro-rgb), 0.8), rgba(var(--negro-navbar-rgb), 0.8));
-    backdrop-filter: blur(10px);
+    background-color: transparent;
     -webkit-backdrop-filter: blur(10px); /* soporte para Safari */
     z-index: 1;
   }

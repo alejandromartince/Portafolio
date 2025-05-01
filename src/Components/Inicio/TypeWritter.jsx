@@ -13,13 +13,13 @@ const TypeWritter = () => {
       "Ingeniero Informático",
       "Desarrollador Web",
       "Desarrollador Frontend",
-      "Administrador de Sistemas Informáticos en Red",
+      "Administrador de Sistemas",
     ],
     en: [
       "Computer Engineer",
       "Web Developer",
       "Frontend Developer",
-      "Networked Computer System Administrator",
+      "System Administrator",
     ],
   }
 
@@ -37,6 +37,7 @@ const TypeWritter = () => {
             cursor: "|",
             cursorBlinking: true,
             cursorClassName: "typewriter-cursor",
+            wrapperClassName: "typewriter-wrapper",
           }}
         />
       </div>

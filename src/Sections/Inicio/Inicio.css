@@ -21,7 +21,9 @@
 ====================================*/
 .titulo-nombre{
     font-weight: lighter;
-    font-size: 2.5rem;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-left: 2px;
 }
 
 .apellido-typewritter-container{
@@ -32,7 +34,7 @@
 .titulo-apellido{
     font-weight: bold;
     font-size: 4rem;
-    line-height: 3rem;
+    line-height: 3.5rem;
 }
 
 
@@ -44,7 +46,14 @@
     color: var(--verde-claro);
     font-size: 1.2rem; /* Aumenta el tamaño */
     animation: blink .8s infinite;
-    margin-left: 1px;
+}
+
+.typewriter-wrapper{
+    display: inline-block;
+    white-space: nowrap; /* Keeps the content on a single line */
+    letter-spacing: .30em; /* Adjust as needed */
+    margin-left: 2px;
+    font-weight: 200;
 }
 
 @keyframes blink {
