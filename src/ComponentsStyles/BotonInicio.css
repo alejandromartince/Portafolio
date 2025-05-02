@@ -79,7 +79,7 @@
 
 .fancy:hover {
     color: white;
-    background: black;
+    background: rgb(12, 12, 12);
 }
 
 .fancy:hover::before {

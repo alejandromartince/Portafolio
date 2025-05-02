@@ -10,7 +10,6 @@ OPCIONES GENERALES
     padding: 0 2rem;
     overflow: hidden;
     background-color: transparent;
-    -webkit-backdrop-filter: blur(10px); /* soporte para Safari */
     z-index: 1;
   }
   
@@ -39,21 +38,18 @@ CONTENEDOR IZQUIERDA
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 1.5rem; /* Empieza con la línea oculta */
+    width: .5rem; /* Empieza con la línea oculta */
     height: 2px;
     background-color: var(--verde-claro);
     transition: width 0.3s ease-in-out; /* Animación para expandir la línea */
 }
 
-/* Subrayado en hover */
-.navbar-enlace:hover {
-    color: var(--verde-claro);
+.navbar-enlace:hover{
+    color: var(--verde-claro); /* Cambia el color del texto al pasar el mouse */
+
 }
 
-
-
-/* Subrayado para el estado activo */
-.active {
+.active{
     color: var(--verde-claro);
 }
 
@@ -64,7 +60,6 @@ CONTENEDOR IZQUIERDA
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: var(--verde-claro);
 }
 
 

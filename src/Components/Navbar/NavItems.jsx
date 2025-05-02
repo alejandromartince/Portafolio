@@ -7,13 +7,16 @@ import { navLinks } from "../../Constants/navLinks";
 import { useIdioma } from "../../Contexts/IdiomaContext";
 
 const NavItems = ({ onClick }) => {
-    const { idioma } = useIdioma(); // 👈 aquí obtienes el idioma actual
-
+    const { idioma } = useIdioma();
+    
     return (
         <div className="contenedor-izquierda">
             <ul className="navbar-list">
                 {navLinks.map((item) => (
-                    <li key={item.id} className="navbar-item">
+                    <li
+                        key={item.id}
+                        className={`navbar-item`}
+                    >
                         <Link
                             to={item.href}
                             className="navbar-enlace"
@@ -22,8 +25,9 @@ const NavItems = ({ onClick }) => {
                             spy={true}
                             offset={0}
                             onClick={onClick}
+                            activeClass="active"
                         >
-                            {item.name[idioma]} {/* 👈 cambia language por idioma */}
+                            {item.name[idioma]}
                         </Link>
                     </li>
                 ))}

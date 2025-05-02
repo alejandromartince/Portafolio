@@ -8,6 +8,7 @@ import SelectorIdioma from '../../Components/Navbar/SelectorIdioma';
 
 //Importamos el contexto
 import { useIdioma } from '../../Contexts/IdiomaContext';
+import { useSection } from '../../Contexts/SectionContext';
 
 //Importamos los estilos
 import './Navbar.css'
@@ -15,8 +16,10 @@ import './Navbar.css'
 const Navbar = () => {
 
     const idioma = useIdioma(); // Usamos el hook de idioma
-   
-    //Ponemos offset en 1 para que se carge la active class de primeras
+    const { setCurrentSection } = useSection(); // Usamos el hook de sección
+    
+    console.log(setCurrentSection)
+
     useEffect(() => {
         scroller.scrollTo('inicio', {
             duration: 0,  
@@ -28,7 +31,7 @@ const Navbar = () => {
 
 
     return (
-        <header className='navbar'>
+        <header className="navbar">
             <NavItems language={idioma} /> 
 
             <div className='contenedor-derecha'>
