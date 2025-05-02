@@ -4,10 +4,13 @@ import React from 'react'
 import TypeWritter from '../../Components/Inicio/TypeWritter'
 import BotonInicio from '../../Components/Inicio/Botón'
 
+
 //Importamos los estilos
 import './Inicio.css'
 
 const Inicio = () => {
+
+  
   return (
     <section id='inicio' className='inicio'>
       <div className='inicio-contenido'>
@@ -16,7 +19,6 @@ const Inicio = () => {
           <h1 className='titulo-apellido'>MARTÍN</h1>
           <TypeWritter />
         </div>
-
         <BotonInicio text="Proyectos" href="#proyectos" />
       </div>
     </section >

@@ -1,22 +1,16 @@
-//Importamos los hooks de react
 import React from "react";
 import { Link } from "react-scroll";
 import { navLinks } from "../../Constants/navLinks";
-
-//Importamos el contexto del idioma
 import { useIdioma } from "../../Contexts/IdiomaContext";
 
 const NavItems = ({ onClick }) => {
     const { idioma } = useIdioma();
-    
+
     return (
         <div className="contenedor-izquierda">
             <ul className="navbar-list">
                 {navLinks.map((item) => (
-                    <li
-                        key={item.id}
-                        className={`navbar-item`}
-                    >
+                    <li key={item.id} className="navbar-item">
                         <Link
                             to={item.href}
                             className="navbar-enlace"

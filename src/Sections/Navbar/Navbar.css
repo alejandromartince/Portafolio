@@ -4,7 +4,7 @@ OPCIONES GENERALES
 .navbar {
     display: flex;
     justify-content: space-between;
-    height: 3.5rem;
+    height: 4rem;
     width: 100%;
     position: fixed;
     padding: 0 2rem;
