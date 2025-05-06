@@ -20,6 +20,10 @@
 /*====================================
     OPCIONES DEL TITULO
 ====================================*/
+.inicio-texto{
+    margin-bottom: 2rem;
+}
+
 .titulo-nombre{
     font-weight: lighter;
     font-size: 2rem;
@@ -37,6 +41,7 @@
     font-size: 4rem;
     line-height: 3.5rem;
 }
+
 
 
 /*============================================

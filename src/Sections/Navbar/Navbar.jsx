@@ -4,7 +4,6 @@ import { scroller } from 'react-scroll'; // Importamos scroller de react-scroll
 
 //Importamos los componentes
 import NavItems from '../../Components/Navbar/NavItems'
-import SelectorIdioma from '../../Components/Navbar/SelectorIdioma';
 
 //Importamos el contexto
 import { useIdioma } from '../../Contexts/IdiomaContext';
@@ -31,9 +30,8 @@ const Navbar = () => {
         <header className="navbar">
             <NavItems language={idioma} /> 
 
-
             <div className='contenedor-derecha'>
-                <SelectorIdioma />
+                <p>insert here</p>
             </div>
         </header >
     )
