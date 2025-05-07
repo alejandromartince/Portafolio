@@ -7,10 +7,8 @@ import BotonInicio from '../../Components/Inicio/Botón'
 
 //Importamos los estilos
 import './Inicio.css'
-import Proyectos from '../Proyectos/Proyectos'
 
 const Inicio = () => {
-
 
   return (
     <section id='inicio' className='inicio'>
