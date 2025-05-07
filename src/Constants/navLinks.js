@@ -10,10 +10,10 @@ export const navLinks = [
     {
       id: 2,
       name: {
-        es: "Proyectos",
-        en: "Projects",
+        es: "Sobre mí",
+        en: "About me",
       },
-      href: "proyectos",
+      href: "sobremi",
     },
     {
       id: 3,

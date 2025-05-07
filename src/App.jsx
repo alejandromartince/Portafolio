@@ -1,7 +1,8 @@
 // Importamos los componentes
 import Navbar from './Sections/Navbar/Navbar';
 import Inicio from './Sections/Inicio/Inicio';
-import Proyectos from './Sections/Proyectos/Proyectos';
+import SobreMi from './Sections/SobreMi/SobreMi';
+import Introduccion from './Sections/Introduccion/Introduccion';
 
 // Importamos los contextos
 import { IdiomaProvider } from './Contexts/IdiomaContext';
@@ -15,7 +16,8 @@ function App() {
         <>
           <Navbar />
           <Inicio />
-          <Proyectos />
+          <Introduccion />
+          <SobreMi />
         </>
     </IdiomaProvider>
   );

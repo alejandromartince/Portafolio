@@ -1,42 +1,32 @@
-//Importamos los hooks de react
-import React, { useEffect } from 'react'
-import { scroller } from 'react-scroll'; // Importamos scroller de react-scroll
+import React, { useState } from 'react';
 
-//Importamos los componentes
-import NavItems from '../../Components/Navbar/NavItems'
+//Importamos el hook que maneja el scroll y los efectos de activación de secciones
+import { useScrollEffect } from '../../Hooks/useScrollEffect'; 
+
+//Importamos el componente NavItems
+import NavItems from '../../Components/Navbar/NavItems';
 
 //Importamos el contexto
 import { useIdioma } from '../../Contexts/IdiomaContext';
 
-//Importamos los estilos
-import './Navbar.css'
+//Importamos el estilo
+import './Navbar.css';
 
 const Navbar = () => {
+  const idioma = useIdioma();
+  const [activeSection, setActiveSection] = useState('inicio');
 
-    const idioma = useIdioma(); // Usamos el hook de idioma
+  useScrollEffect(setActiveSection); // Aplica el hook
 
+  return (
+    <header className="navbar">
+      <NavItems language={idioma} activeSection={activeSection} />
 
-    useEffect(() => {
-        scroller.scrollTo('inicio', {
-            duration: 0,  
-            delay: 0,
-            smooth: false, 
-            offset: 1, 
-        });
-    }, []);
+      <div className='contenedor-derecha'>
+        <p>insert here</p>
+      </div>
+    </header>
+  );
+};
 
-
-    return (
-        <header className="navbar">
-            <NavItems language={idioma} /> 
-
-            <div className='contenedor-derecha'>
-                <p>insert here</p>
-            </div>
-        </header >
-    )
-}
-
-export default Navbar
-
-//SE PUEDE ESCRIBIR EN EL IDIOMA. HAY QUE MODIFICAR ESO
+export default Navbar;
