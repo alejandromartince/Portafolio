@@ -11,8 +11,14 @@ OPCIONES GENERALES
     overflow: hidden;
     background-color: transparent;
     z-index: 1;
-  }
-  
+    transition: all 0.3s ease;
+}
+
+.navbar-scrolled {
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
 
 /* ==========================================
 CONTENEDOR IZQUIERDA
@@ -29,8 +35,10 @@ CONTENEDOR IZQUIERDA
     text-decoration: none;
     cursor: pointer;
     position: relative;
-    padding-bottom: 4px; /* Espacio entre el texto y la línea */
-    transition: color 0.3s ease-in-out; /* Transición de color para el hover */
+    padding-bottom: 4px;
+    /* Espacio entre el texto y la línea */
+    transition: color 0.3s ease-in-out;
+    /* Transición de color para el hover */
 }
 
 .navbar-enlace::after {
@@ -38,18 +46,21 @@ CONTENEDOR IZQUIERDA
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 1rem; /* Empieza con la línea oculta */
+    width: 1rem;
+    /* Empieza con la línea oculta */
     height: 2px;
     background-color: var(--verde-claro);
-    transition: width 0.3s ease-in-out; /* Animación para expandir la línea */
+    transition: width 0.3s ease-in-out;
+    /* Animación para expandir la línea */
 }
 
-.navbar-enlace:hover{
-    color: var(--verde-claro); /* Cambia el color del texto al pasar el mouse */
+.navbar-enlace:hover {
+    color: var(--verde-claro);
+    /* Cambia el color del texto al pasar el mouse */
 
 }
 
-.active{
+.active {
     color: var(--verde-claro);
 }
 
