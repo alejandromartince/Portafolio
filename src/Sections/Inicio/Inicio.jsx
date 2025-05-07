@@ -20,7 +20,7 @@ const Inicio = () => {
             <TypeWritter />
           </div>
         </div>
-        <BotonInicio text="Proyectos" to="proyectos"/>
+        <BotonInicio text="Proyectos" to="sobremi" duration={1200}/>
       </div>
     </section >
   )

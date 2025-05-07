@@ -23,7 +23,7 @@ const NavItems = ({ onClick, activeSection }) => {
                 smooth={true}
                 duration={500}
                 spy={true}
-                offset={-70}
+                offset={0}
                 onClick={onClick}
               >
                 {item.name[idioma]}

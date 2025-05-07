@@ -2,7 +2,7 @@ import React from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import '../../ComponentsStyles/BotonInicio.css';
 
-const BotonInicio = ({ text, to, offset, duration = 500 }) => {
+const BotonInicio = ({ text, to, offset, duration }) => {
   return (
     <ScrollLink
       to={to}

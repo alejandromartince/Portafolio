@@ -4,7 +4,7 @@ import { useEffect } from "react";
 export const useScrollEffect = (setActiveSection) => {
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPosition = window.scrollY + 70;
+      const scrollPosition = window.scrollY;
 
       const inicio = document.getElementById("inicio");
       const introduccion = document.getElementById("introduccion");
