@@ -14,6 +14,7 @@ OPCIONES GENERALES
     transition: all 0.3s ease;
 }
 
+/* Opciones del navbar cuando está scrolled */
 .navbar-scrolled {
     background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(10px);
@@ -77,5 +78,8 @@ CONTENEDOR IZQUIERDA
 /* ==========================================
 CONTENEDOR DERECHA
 ===========================================*/
-/* .contenedor-derecha{
-} */
+.contenedor-derecha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

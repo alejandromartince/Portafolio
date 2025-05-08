@@ -4,8 +4,9 @@ import React, { useState } from 'react';
 import { useScrollEffect } from '../../Hooks/useScrollEffect';
 import useScrollPositionY from '../../Hooks/useScrollPositionY';
 
-//Importamos el componente NavItems
+//Importamos los componentes de la barra de navegación
 import NavItems from '../../Components/Navbar/NavItems';
+import SelectorIdiomas from '../../Components/Navbar/SelectorIdiomas';
 
 //Importamos el contexto
 import { useIdioma } from '../../Contexts/IdiomaContext';
@@ -22,12 +23,14 @@ const Navbar = () => {
 
 
   return (
-<header className={`navbar ${scrollY >= 150 ? 'navbar-scrolled' : ''}`}>
-<NavItems language={idioma} activeSection={activeSection} />
+    <header className={`navbar ${scrollY >= 150 ? 'navbar-scrolled' : ''}`}>
 
-      <div className='contenedor-derecha'>
-        <p>insert here</p>
-      </div>
+      {/*Componente que muestra las secciones de la barra de navegación*/}
+      <NavItems language={idioma} activeSection={activeSection} />
+
+      {/*Componente que muestra el selector de idiomas*/}
+      <SelectorIdiomas />
+
     </header>
   );
 };
