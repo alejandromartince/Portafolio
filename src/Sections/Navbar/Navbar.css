@@ -90,6 +90,9 @@ CONTENEDOR DERECHA
     position: relative;
 }
 
+/* ==========================================
+ANIMACIÓN DE ENTRADA PARA LAS OPCIONES DE IDIOMA
+===========================================*/
 .menu-idiomas {
     position: absolute;
     top: 3rem;
@@ -97,9 +100,10 @@ CONTENEDOR DERECHA
     z-index: 2;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     border-radius: 0.5rem;
+    animation: fadeInMenu 0.3s ease forwards;
+    opacity: 0;
+    transform: translateY(-10px);
 }
-
-
 
 .bandera-selector {
     width: 30px;
@@ -107,4 +111,11 @@ CONTENEDOR DERECHA
     object-fit: cover;         /* Ajusta bien la imagen dentro */
     border-radius: 50%;        /* Hace la imagen redonda */
     display: block;
+}
+
+@keyframes fadeInMenu {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
