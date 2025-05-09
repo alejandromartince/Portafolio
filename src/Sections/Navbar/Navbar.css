@@ -79,7 +79,7 @@ CONTENEDOR DERECHA
 ===========================================*/
 .contenedor-derecha {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;  /* Cambiado de center a flex-start */
     align-items: center;
 }
 
@@ -92,25 +92,19 @@ CONTENEDOR DERECHA
 
 .menu-idiomas {
     position: absolute;
-    top: 100%;
+    top: 3rem;
     left: 0;
-    background-color: white;
-    border: 1px solid #ccc;
     z-index: 1000;
-    padding: 0.5rem;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
 }
 
-.opcion-idioma {
-    padding: 0.3rem;
-    cursor: pointer;
-}
 
-.opcion-idioma:hover {
-    background-color: #f0f0f0;
-}
 
 .bandera-selector {
     width: 30px;
-    height: auto;
+    height: 30px;              /* Hace la imagen cuadrada */
+    object-fit: cover;         /* Ajusta bien la imagen dentro */
+    border-radius: 50%;        /* Hace la imagen redonda */
+    display: block;
 }
