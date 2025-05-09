@@ -27,7 +27,7 @@ const SelectorIdiomas = () => {
     setMenuDesplegable(!menuDesplegable);
   };
 
-  
+
   const seleccionarIdioma = (idioma) => {
     setIdiomaActual(idioma);
     cambiarIdioma(idioma.code); // Cambiar idioma en el contexto
@@ -52,7 +52,11 @@ const SelectorIdiomas = () => {
     <div className="contenedor-derecha" ref={contenedorRef}>
       <div className="selector-idiomas-container" onClick={handleClick} style={{ position: 'relative', cursor: 'pointer' }}>
         <img src={idiomaActual.src} alt={idiomaActual.alt} className="bandera-selector" />
-        <IoIosArrowDown size={25} />
+        
+        <IoIosArrowDown
+          size={25}
+          style={{ transform: menuDesplegable ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.3s' }}
+        />
 
         {menuDesplegable && (
           <div className="menu-idiomas">
