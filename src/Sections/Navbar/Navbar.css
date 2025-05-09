@@ -8,7 +8,6 @@ OPCIONES GENERALES
     width: 100%;
     position: fixed;
     padding: 0 2rem;
-    overflow: hidden;
     background-color: transparent;
     z-index: 1;
     transition: all 0.3s ease;
@@ -82,4 +81,36 @@ CONTENEDOR DERECHA
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.selector-idiomas-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+}
+
+.menu-idiomas {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 1000;
+    padding: 0.5rem;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.opcion-idioma {
+    padding: 0.3rem;
+    cursor: pointer;
+}
+
+.opcion-idioma:hover {
+    background-color: #f0f0f0;
+}
+
+.bandera-selector {
+    width: 30px;
+    height: auto;
 }

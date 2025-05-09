@@ -21,7 +21,7 @@ const NavItems = ({ onClick, activeSection }) => {
                 to={item.href}
                 className={`navbar-enlace ${isActive ? "active" : ""}`}
                 smooth={true}
-                duration={500}
+                duration={800}
                 spy={true}
                 offset={0}
                 onClick={onClick}
