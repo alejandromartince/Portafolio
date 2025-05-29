@@ -188,3 +188,15 @@ NAVBAR PARA EL MOVIL
   background-color: rgba(0,0,0,0.5);
   z-index: 1000;
 }
+
+
+/* ============================
+MEDIA QUERIES
+============================ */
+
+@media (max-width: 768px) {
+    .navbar{
+      justify-content: space-between;
+      padding: 0 2rem;
+    }
+}
