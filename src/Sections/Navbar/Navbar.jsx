@@ -1,5 +1,6 @@
 //Importamos los componentes
 import NavbarDefault from "../../Components/Navbar/NavbarDefault";
+import NavbarMobile from "../../Components/Navbar/NavbarMobile";
 import SelectorIdioma from "../../Components/Navbar/SelectorIdioma";
 
 //Importamos los hooks
@@ -21,6 +22,11 @@ const Navbar = () => {
 
             {/* NAVBAR PARA DESKTOP Y TABLET */}
             {tipoDispositivo !== "movil" && (<NavbarDefault />)}
+
+            {/* NAVBAR PARA MOVIL */}
+            {tipoDispositivo === "movil" && (
+                <NavbarMobile />
+            )}
 
         </div>
     )

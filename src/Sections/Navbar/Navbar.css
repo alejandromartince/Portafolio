@@ -35,13 +35,18 @@ OPCIONES DE LA PARTE DERECHA
     text-decoration: none;
 }
 
+.navbar__default{
+    width: 24rem;
+}
+
 /*=============================
 OPCIONES DEL SELECTOR DE IDIOMAS
 =============================*/
-.navbar__idioma-selector{
-    width: 6rem;
+.navbar__idioma-selector {
+    width: 7rem;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .imagen-bandera {
@@ -53,6 +58,133 @@ OPCIONES DEL SELECTOR DE IDIOMAS
     cursor: pointer;
 }
 
-.imagen-bandera:hover {
-  transform: scale(1.1);
+.selector-idioma {
+    position: relative;
+    color: var(--blanco);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.selector-idioma__actual {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    background-color: var(--negro-muy-claro);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.selector-idioma__opciones {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--negro-muy-claro);
+    border: 1px solid var(--gris-claro);
+    margin-top: 4px;
+    border-radius: 5px;
+    z-index: 100;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.selector-idioma__opcion {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 10px;
+    transition: background 0.2s ease;
+}
+
+.selector-idioma__opcion:hover {
+    background-color: var(--gris);
+}
+
+.selector-idioma__opcion.activo {
+    background-color: var(--verde-oscuro);
+    border-left: 2px solid var(--verde-claro);
+}
+
+/* ==================================
+NAVBAR PARA EL MOVIL
+===================================*/
+.navbar-mobile {
+  position: relative;
+  z-index: 1000;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+/* Menú lateral */
+.menu-lateral {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 70%;
+  max-width: 300px;
+  height: 100vh;
+  background-color: #1f1f1f;
+  padding: 20px;
+  transition: left 0.3s ease-in-out;
+  z-index: 1050;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-lateral.abierto {
+  left: 0;
+}
+
+/* Header del menú */
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-cerrar {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Navegación */
+.menu-navegacion ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-navegacion li {
+  margin: 20px 0;
+}
+
+.menu-navegacion a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  position: relative;
+}
+
+.menu-navegacion a:hover,
+.menu-navegacion a:focus {
+  color: #00ff99;
+}
+
+/* Overlay al fondo */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1000;
 }

@@ -11,15 +11,17 @@ const NavbarDefault = () => {
 
   return (
 
-    <nav className="navbar__container">
-      <ul>
-        {infoNavbar.map((item) => (
-          <li key={item.id}>
-            <a href={item.link}>{item[idioma]}</a>
-          </li>
-        ))}
-      </ul>
-    </nav>
+    <div className="navbar__default">
+      <nav className="navbar__container">
+        <ul>
+          {infoNavbar.map((item) => (
+            <li key={item.id}>
+              <a href={item.link}>{item[idioma]}</a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </div>
   )
 }
 

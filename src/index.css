@@ -13,22 +13,31 @@
 }
 
 /* VARIABLES */
-:root{
+:root {
 
   /* BLANCOS */
-  --blanco:#ffffffde;
+  --blanco: #ffffffde;
 
   /* NEGROS */
   --negro-claro: #242424;
+  --negro-muy-claro: #1f1f1f;
+
+  /* GRISES */
+  --gris: #2a2a2a;
+  --gris-claro: #333;
+
+  /* VERDES */
+  --verde-oscuro: #0f2c1d;
+  --verde-claro: #00ff99;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
-a{
+a {
   color: var(--blanco);
 }
