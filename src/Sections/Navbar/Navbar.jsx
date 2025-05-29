@@ -1,30 +1,27 @@
-//Importamos la informacion
-import { infoNavbar } from "../../Constants/infoNavbar";
+//Importamos los componentes
+import NavbarDefault from "../../Components/Navbar/NavbarDefault";
+import SelectorIdioma from "../../Components/Navbar/SelectorIdioma";
 
-//Importamos el contexto
-import { useIdioma } from "../../Contexts/idiomaContext";
+//Importamos los hooks
+import useTipoDispositivo from "../../Hooks/General/useTipoDispositivo";
 
 //Importamos los estilos
 import "./Navbar.css";
 
 const Navbar = () => {
 
-    // Obtenemos el idioma actual del contexto
-    const { idioma } = useIdioma();
+    const tipoDispositivo = useTipoDispositivo();
 
     return (
 
-        <div>
-            <nav>
-                <ul>
-                    {infoNavbar.map((item) => (
-                        <li key={item.id}>
-                            <a href={item.link}>{item[idioma]}</a> 
-                        </li>
-                    ))}
-                </ul>
-            </nav>
-        
+        <div className="navbar">
+
+            {/* SELECCIONAR IDIOMAS PARA TODOS LOS DISPOSITIVOS */}
+            <SelectorIdioma />
+
+            {/* NAVBAR PARA DESKTOP Y TABLET */}
+            {tipoDispositivo !== "movil" && (<NavbarDefault />)}
+
         </div>
     )
 }
