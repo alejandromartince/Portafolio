@@ -5,19 +5,19 @@ export const infoNavbar = [
         id: 1,
         es: "Inicio",
         en: "Home",
-        link: "/",
+        link: "home",
     },
     {
         id: 2,
         es: "Sobre mí",
         en: "About Me",
-        link: "/about",
+        link: "about",
     },
     {
         id: 3,
         es: "Proyectos",
         en: "Projects",
-        link: "/projects",
+        link: "projects",
     },
     {
         id: 4,

@@ -1,6 +1,14 @@
+//Importamos los hoooks de react
 import { useState } from "react";
+import { Link } from "react-scroll";
+
+//Importamos la informacion
 import { infoNavbar } from "../../Constants/infoNavbar";
+
+//Importamos el contexto del idioma
 import { useIdioma } from "../../Contexts/idiomaContext";
+
+//Importamos los iconos
 import { IoMdClose, IoMdMenu } from "react-icons/io";
 
 const NavbarMobile = () => {
@@ -30,9 +38,9 @@ const NavbarMobile = () => {
           <ul>
             {infoNavbar.map((item) => (
               <li key={item.id}>
-                <a href={item.link} onClick={toggleMenu}>
+                <Link to={item.link} onClick={toggleMenu} smooth duration={600}>
                   {item[idioma]}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

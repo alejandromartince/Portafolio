@@ -2,16 +2,15 @@
 OPCIONES GENERALES
 ============================ */
 .navbar {
-    width: 100%;
-    height: 4rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
 }
 
 
@@ -19,89 +18,100 @@ OPCIONES GENERALES
 OPCIONES DE LA PARTE DERECHA
 ============================ */
 .navbar__container {
-    display: flex;
-    height: 100%;
+  display: flex;
+  height: 100%;
 }
 
 .navbar__container ul {
-    display: flex;
-    list-style: none;
-    align-items: center;
-    gap: 2rem;
-    padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 2rem;
+  padding: 0;
 }
 
-.navbar__container ul a {
-    text-decoration: none;
+.navbar__container ul a{
+  cursor: pointer;
+  color: var(--blanco-transparente);
+  transition: color .3s ease-in-out;
 }
 
-.navbar__default{
-    width: 24rem;
+.navbar__container ul a:hover{
+  color: var(--blanco);
+}
+
+.navbar__default {
+  width: 24rem;
 }
 
 /*=============================
 OPCIONES DEL SELECTOR DE IDIOMAS
 =============================*/
 .navbar__idioma-selector {
-    width: 7rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .imagen-bandera {
-    height: 1.5rem;
-    width: 1.5rem;
-    border-radius: 50%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-    cursor: pointer;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .selector-idioma {
-    position: relative;
-    color: var(--blanco);
-    font-size: 14px;
-    cursor: pointer;
+  position: relative;
+  color: var(--blanco);
+  font-size: 14px;
+  cursor: pointer;
 }
 
 .selector-idioma__actual {
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-    background-color: var(--negro-muy-claro);
-    padding: 5px 10px;
-    border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  background-color: var(--negro-muy-claro);
+  padding: .25rem .5rem;
+  border-radius: 5px;
 }
 
+
 .selector-idioma__opciones {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: var(--negro-muy-claro);
-    border: 1px solid var(--gris-claro);
-    margin-top: 4px;
-    border-radius: 5px;
-    z-index: 100;
-    width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--negro-muy-claro);
+  border: 1px solid var(--gris-claro);
+  margin-top: 4px;
+  border-radius: 5px;
+  z-index: 100;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 .selector-idioma__opcion {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 6px 10px;
-    transition: background 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  transition: background 0.2s ease;
 }
 
 .selector-idioma__opcion:hover {
-    background-color: var(--gris);
+  background-color: var(--gris);
 }
 
 .selector-idioma__opcion.activo {
-    background-color: var(--verde-oscuro);
-    border-left: 2px solid var(--verde-claro);
+  background-color: var(--verde-muy-oscuro);
+  border-left: 2px solid var(--blanco-claro);
+}
+
+.selector-idioma__opcion.activo:hover{
+ background-color: var(--verde-oscuro); 
 }
 
 /* ==================================
@@ -185,7 +195,7 @@ NAVBAR PARA EL MOVIL
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 1000;
 }
 
@@ -195,8 +205,8 @@ MEDIA QUERIES
 ============================ */
 
 @media (max-width: 768px) {
-    .navbar{
-      justify-content: space-between;
-      padding: 0 2rem;
-    }
+  .navbar {
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
 }

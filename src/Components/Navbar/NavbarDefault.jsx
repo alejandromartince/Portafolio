@@ -1,3 +1,6 @@
+//Importamos los componentes de react
+import { Link } from "react-scroll";
+
 //Importamos la informacion
 import { infoNavbar } from "../../Constants/infoNavbar";
 
@@ -16,7 +19,7 @@ const NavbarDefault = () => {
         <ul>
           {infoNavbar.map((item) => (
             <li key={item.id}>
-              <a href={item.link}>{item[idioma]}</a>
+              <Link to={item.link} smooth duration={700}>{item[idioma]}</Link>
             </li>
           ))}
         </ul>

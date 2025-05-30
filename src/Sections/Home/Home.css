@@ -1,0 +1,32 @@
+/* ============================
+OPCIONES GENERALES
+============================ */
+.home {
+  position: relative; /* Para que el degradado absoluto se relacione a esta sección */
+  z-index: 0;         /* Asegura que el contenido tenga un z-index más alto que el fondo */
+  height: 100vh;
+  padding: 4rem 0;
+}
+
+/* ============================
+OPCIONES FONDO DEGRADADO
+============================ */
+.degradado-fondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Debajo del contenido dentro de .home */
+  width: 100%;
+  height: 100%;
+  background-color: var(--negro);
+  background-image: radial-gradient(
+    ellipse 80% 80% at 50% -20%,
+    rgba(142, 141, 201, 0.3),
+    rgba(255, 255, 255, 0)
+  );
+  pointer-events: none; /* No bloquea interacciones */
+}
+
+/* ============================
+OPCIONES TEXTO
+============================ */
