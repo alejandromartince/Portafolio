@@ -1,5 +1,3 @@
-import { Link } from 'react-scroll';
-
 //Importamos los componentes
 import BotonLinea from '../../Components/Botones/BotonLinea';
 
@@ -19,7 +17,8 @@ const Home = () => {
       <div className="degradado-fondo"></div>
 
       <div className='texto-container'>
-        <p>hola</p>
+        <h2>ALEJANDRO</h2>
+        <h1>MARTIN</h1>
         <BotonLinea id="proyectos" idioma={idioma} />
         <BotonLinea id="cv" idioma={idioma} />
       </div>
